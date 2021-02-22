@@ -2,11 +2,11 @@
 import React from 'react';
 
  export default class App extends React.Component{
-   
+
    state = {
      peopleIn :[]
    }
-   
+
    componentDidMount(){
      fetch('http://api.open-notify.org/astros.json')
      .then(res => res.json())
@@ -15,7 +15,7 @@ import React from 'react';
      })
      })
    }
-   
+
    render(){
     return(
        <div>
@@ -25,5 +25,5 @@ import React from 'react';
 
 
   }
-} 
+}
  
